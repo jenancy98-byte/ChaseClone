@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Portal - Chase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav style="background-color: #333;">
+        <div class="logo">CHASE ADMIN</div>
+        <a href="index.html" onclick="sessionStorage.clear()">Sign Out</a>
+    </nav>
+    <div style="padding: 20px;">
+        <div class="card">
+            <h3>User Management</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Account #</th>
+                        <th>Balance</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/db.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
